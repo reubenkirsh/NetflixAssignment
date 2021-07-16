@@ -15,12 +15,12 @@ export default function MyListMovie(props) {
  
   return (
     
-    <div className = {"container"} key = {props.id}>
+    <div className = {"row"} key = {props.id}>
       <h2>{props.title}</h2>
-      <img alt = {"movie_picture"}id ={props.id}src ={props.img} onMouseEnter = {mouseEntered} />
-      
-      {onMouseEntering ? <button className = {"btn"} onClick = {()=>{deleteMovie()}}>delete movie</button>: null}
+      <img alt = {"movie_picture"}id ={props.id} src ={props.img} onMouseEnter = {mouseEntered} />
       <hr></hr>
+      {onMouseEntering ? <button className = {"btn"} onClick = {()=>{deleteMovie()}}>delete movie</button>: null}
+    
     </div>
   )
 }

@@ -10,11 +10,11 @@ export default function BothLists() {
  
   return (
     <div>
-      <h1>My List</h1>
+    
       <MyList  setHighestState ={setHighestState} highestState ={highestState}/>
-      <h1>My Recommendations</h1>
+      <hr></hr>
       <MyRecommendationList setHighestState ={setHighestState} highestState ={highestState}/>
-      <h1>MyList of Movie Titles</h1>
+      <hr></hr>
       <MyListDisplayBottom highestState ={highestState}/>
     </div>
   )

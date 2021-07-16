@@ -1,68 +1,52 @@
-.App {
-  text-align: center;
-}
+.App{
+  background-color: rgb(251, 251, 251);}
+button {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* Container needed to position the button. Adjust the width as needed */
-.container {
-  position: relative;
-  width: 50%;
-}
-
-/* Make the image responsive */
-.container img {
-  width: 50%;
-  height: auto;
-}
-
-/* Style the button and place it in the middle of the container/image */
-.container .btn {
   /* position: absolute; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+
   background-color: rgb(255, 8, 8);
-  /* color: white;
+  color: white;
   font-size: 16px;
   padding: 12px 24px;
   border: none;
-  /* cursor: pointer; */
-  /* border-radius: 5px; */ 
+  cursor: pointer;
+  border-radius: 5px; 
 }
 
+.myListContainer {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "row row row"
+  
+}
 
+.myRecommendationsContainer {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "row row row"
+}
+img{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.row{ text-align: center;
+  width:50%;}
+
+.myListDisplayBottom{
+  text-align: center;
+}
+.myList{
+  text-align: center;
+}
+.myRecommendations{
+  text-align: center;
 }
