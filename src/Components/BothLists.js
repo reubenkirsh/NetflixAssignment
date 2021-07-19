@@ -9,8 +9,8 @@ export default function BothLists() {
 
  
   return (
-    <div>
-    
+    <div data-testid = {"bothLists"}>
+      <h1 className ={"titleWriting"}>Sample Netflix User List And Recommendations</h1>
       <MyList  setHighestState ={setHighestState} highestState ={highestState}/>
       <hr></hr>
       <MyRecommendationList setHighestState ={setHighestState} highestState ={highestState}/>

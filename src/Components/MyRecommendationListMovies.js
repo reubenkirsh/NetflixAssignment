@@ -32,7 +32,7 @@ export default function MyRecommendationListMovies(props) {
  
   return (
     
-    <div className = {"row"} key = {props.id}>
+    <div data-testid = {"myRecommendationListMovies"} className = {"row"} key = {props.id}>
       <h2>{props.title}</h2>
       <img  alt = {"movie_picture"} id ={props.id}src ={props.img} onMouseEnter = {mouseEntered} />
       <hr></hr>

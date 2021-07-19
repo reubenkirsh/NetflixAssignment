@@ -10,6 +10,6 @@ function MyRecommendationList(props){
     </MyRecommendationListMovies>
           )
    })
-  return (<div className ={"myRecommendations"}><h1>My Recommendations</h1><div className ={"myRecommendationsContainer"}>{mappedItems}</div></div>)
+  return (<div data-testid = {"myRecommendationsList"} className ={"myRecommendations"}><h1>My Recommendations</h1><div className ={"myRecommendationsContainer"}>{mappedItems}</div></div>)
 }
 export default MyRecommendationList
