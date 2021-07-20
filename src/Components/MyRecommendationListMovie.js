@@ -7,7 +7,7 @@ export default function MyRecommendationListMovie(props) {
 
   function addMovie(event) {
     const mylist = [...highestState.mylist];
-    console.log(mylist);
+
     const recommendations = highestState.recommendations;
     let movie;
     for (let i = 0; i < recommendations.length; i++) {
