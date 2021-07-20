@@ -93,15 +93,19 @@ html,body{
         position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    min-width: 300px;
+        min-height: 360px;
     
        
       }
       .myList{ 
-        text-align:center
+        text-align:center;
+       
       }
       .myListMovieItem{
-       
+        min-width: 400px;
+        min-height: 360px;
         padding: 20px;
         outline: 2px solid rgb(108, 0, 0);
         
@@ -109,23 +113,29 @@ html,body{
         justify-content: center;
       }
       .myRecommendationsContainer {
-  
         color: rgb(202, 202, 202);
         position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    min-width: 300px;
+        min-height: 360px;
       }
       .myRecommendations{
        
         text-align:center
       }
       .myRecommendationsItem{
+        min-width: 400px;
+        min-height: 360px;
         padding: 20px;
         outline: 2px solid rgb(108, 0, 0);
         
         align-items: center;
         justify-content: center;
+      }
+      .listOfLikedMovies{
+        padding-bottom: 20px;
       }
     
     
