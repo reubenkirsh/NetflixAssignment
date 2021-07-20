@@ -6,7 +6,8 @@ export default function MyRecommendationListMovie(props) {
   const { highestState, setHighestState } = props;
 
   function addMovie(event) {
-    const mylist = highestState.mylist;
+    const mylist = [...highestState.mylist];
+    console.log(mylist);
     const recommendations = highestState.recommendations;
     let movie;
     for (let i = 0; i < recommendations.length; i++) {
@@ -26,7 +27,7 @@ export default function MyRecommendationListMovie(props) {
       mylist.push(movie);
     }
 
-    setHighestState({ ...highestState, recommendations });
+    setHighestState({ ...highestState, mylist });
   }
   function mouseEntered(event) {
     setOnMouseEntering(true);
