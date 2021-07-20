@@ -7,10 +7,9 @@ export default function MyListMovie(props) {
 
   function deleteMovie(event) {
     const updatedMyList = highestState.mylist.filter((ele) => ele.id !== id);
-    const updatedMyListObject = { mylist: updatedMyList };
-    const recommendations = highestState.recommendations;
+    const mylist = updatedMyList;
 
-    setHighestState({ ...highestState, recommendations });
+    setHighestState({ ...highestState, mylist });
   }
   function mouseEntered(event) {
     setOnMouseEntering(true);
