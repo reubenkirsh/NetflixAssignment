@@ -7,13 +7,6 @@ afterEach(() => {
 test("testing MyListMovie renders properly", () => {
   const propsTest = fakeAPI();
   render(<MyListMovie highestState={propsTest} />);
-  const myListMovieElement = screen.getByTestId("myListMovie");
+  const myListMovieElement = screen.getByTestId("myListMovieItem");
   expect(myListMovieElement).toBeInTheDocument();
-});
-
-test("testing MyListMovie images render properly", () => {
-  const propsTest = fakeAPI();
-  render(<MyListMovie highestState={propsTest} />);
-  const imgAlt = screen.getByAltText("movie_picture");
-  expect(imgAlt).toBeInTheDocument();
 });

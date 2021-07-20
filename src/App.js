@@ -1,10 +1,9 @@
-import "./App.css";
-import BothLists from "./Components/BothLists";
+import AllLists from "./Components/AllLists";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <BothLists />
+      <AllLists />
     </div>
   );
 }

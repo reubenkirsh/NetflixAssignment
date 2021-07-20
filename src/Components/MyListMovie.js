@@ -22,23 +22,24 @@ export default function MyListMovie(props) {
   return (
     <div
       className={"myListMovieItem"}
-      data-testid={"myListMovie"}
-      id={"myList" + props.idNumber}
-      key={props.id}
+      data-testid={"myListMovieItem"}
+      id={"myList" + props.id}
+      key={"myList" + props.id}
       onMouseLeave={mouseExited}
     >
       <h3 className={"movieTitle"}>{props.title}</h3>
       <img
-        alt={"movie_picture"}
-        id={props.idNumber}
+        alt={"moviePictureMyList" + props.id}
+        id={"myListImg" + props.id}
         src={props.img}
         onMouseEnter={mouseEntered}
       />
       <br></br>
       {onMouseEntering ? (
-        <div class="d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
           <Button
             variant="outline-danger"
+            className={"buttonS"}
             size="lg"
             onClick={() => {
               deleteMovie();

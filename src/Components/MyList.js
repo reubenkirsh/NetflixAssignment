@@ -4,8 +4,7 @@ function MyList(props) {
     count += 1;
     return (
       <MyListMovie
-        idNumber={count}
-        key={ele.id}
+        key={count}
         id={ele.id}
         title={ele.title}
         img={ele.img}
@@ -14,7 +13,7 @@ function MyList(props) {
       ></MyListMovie>
     );
   });
-  console.log(mappedItems);
+
   return (
     <div data-testid={"myList"} className={"myList"}>
       <h1>My List</h1>

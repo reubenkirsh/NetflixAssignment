@@ -7,6 +7,6 @@ afterEach(() => {
 test("testing MyRecommendationList with items renders properly", () => {
   const propsTest = fakeAPI();
   render(<MyRecommendationList highestState={propsTest} />);
-  const myListElement = screen.getByTestId("myRecommendationsList");
+  const myListElement = screen.getByTestId("myRecommendations");
   expect(myListElement).toBeInTheDocument();
 });

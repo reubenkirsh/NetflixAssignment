@@ -1,12 +1,13 @@
-import MyRecommendationListMovies from "./MyRecommendationListMovies";
+import MyRecommendationListMovies from "./MyRecommendationListMovie";
 function MyRecommendationList(props) {
   const mappedItems = props.highestState.recommendations.map(
     (ele, count = 0) => {
       count += 1;
       return (
         <MyRecommendationListMovies
-          key={ele.id}
-          id={ele.id}
+          key={"myRecommendation" + count}
+          id={"myRecommendation" + count}
+          uniqueIdentifier={ele.id}
           title={ele.title}
           img={ele.img}
           idNumber={count}
@@ -17,7 +18,7 @@ function MyRecommendationList(props) {
     }
   );
   return (
-    <div data-testid={"myRecommendationsList"} className={"myRecommendations"}>
+    <div data-testid={"myRecommendations"} className={"myRecommendations"}>
       <h2>My Recommendations</h2>
       <div className={"myRecommendationsContainer"}>{mappedItems}</div>
     </div>
