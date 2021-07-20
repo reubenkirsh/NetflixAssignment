@@ -6,8 +6,8 @@ html,body{
   background-color: #111;
   }
   .titleWriting{
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
   background-position: center center;
   color: rgb(229, 42, 42);
   object-fit: contain;
@@ -16,14 +16,11 @@ html,body{
   font-size: 3.5em;
   }
   .myListContainer {
-    color: rgb(202, 202, 202);
+ color: rgb(202, 202, 202);
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
  min-height: 315px;
- 
-
-    
   }
   .myList{
     background-size: cover;

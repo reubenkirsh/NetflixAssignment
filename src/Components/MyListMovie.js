@@ -10,7 +10,7 @@ export default function MyListMovie(props) {
     const updatedMyListObject = { mylist: updatedMyList };
     const recommendations = highestState.recommendations;
 
-    setHighestState({ ...updatedMyListObject, recommendations });
+    setHighestState({ ...highestState, recommendations });
   }
   function mouseEntered(event) {
     setOnMouseEntering(true);
